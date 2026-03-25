@@ -1,0 +1,16 @@
+{
+  "name": "kepler",
+  "owner": {
+    "name": "KeplerBrowser",
+    "email": "support@keplerbrowser.com"
+  },
+  "metadata": {
+    "description": "Kepler plugin for agents."
+  },
+  "plugins": [
+    {
+      "name": "kepler",
+      "source": "./"
+    }
+  ]
+}

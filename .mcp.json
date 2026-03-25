@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "kepler": {
+      "type": "http",
+      "url": "https://app.keplerbrowser.com/mcp"
+    }
+  }
+}
