@@ -2,10 +2,22 @@
 
 ## Get Started
 
-### OpenClaw
+### Claude
 
+TBD
+
+### Claude Code [(docs)](https://code.claude.com/docs/en/discover-plugins)
+
+1. Add the marketplace
+
+```claude
+/plugin marketplace add KeplerBrowser/Plugin
 ```
-openclaw plugins install kepler
+
+2. Install individual plugins
+
+```claude
+/plugin install kepler@kepler-plugin
 ```
 
 ### OpenAI
@@ -16,12 +28,11 @@ TBD
 
 TBD
 
-### Claude
+### OpenClaw
 
-TBD
-
-### Claude Code
-
-```claude
-/plugin marketplace add KeplerBrowser/Plugin
+```bash
+openclaw plugins install kepler
 ```
+
+> [!WARNING]
+> Support for OpenClaw is still experimental.
