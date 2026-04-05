@@ -1,0 +1,4 @@
+{
+  "id": "kepler",
+  "hostTargets": ["desktop", "mobile"]
+}
