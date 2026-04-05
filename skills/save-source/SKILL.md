@@ -5,11 +5,11 @@ description: Save a URL or web resource to a Kepler space. Use when the user wan
 
 Interpret `$ARGUMENTS` as the source the user wants to save to Kepler.
 
-Use `mcp__kepler__add_link` to save it.
+Use the `add_link` tool from the Kepler MCP server to save it.
 
 If the user names a space, save it there.
 
-If the user does not name a space, call `mcp__kepler__list_spaces` and ask them to choose before saving.
+If the user does not name a space, call the `list_spaces` tool from the Kepler MCP server and ask them to choose before saving.
 
 Pass through any title, tags, notes, or other metadata the user explicitly provides when the tool supports it.
 

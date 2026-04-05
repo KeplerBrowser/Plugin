@@ -1,0 +1,43 @@
+{
+  "name": "kepler",
+  "version": "0.2.0",
+  "description": "Kepler plugin for agents - save links, and recall browser memory with your AI assistant.",
+  "author": {
+    "name": "KeplerBrowser",
+    "email": "support@keplerbrowser.com",
+    "url": "https://keplerbrowser.com"
+  },
+  "homepage": "https://keplerbrowser.com",
+  "repository": "https://github.com/KeplerBrowser/Plugin",
+  "license": "UNLICENSED",
+  "keywords": ["kepler", "bookmarks", "links", "memory", "knowledge-graph"],
+  "interface": {
+    "displayName": "Kepler",
+    "shortDescription": "Save links and recall browser memory.",
+    "longDescription": "Bundle Kepler skills with the hosted Kepler MCP server so Codex can save sources and recall saved links across spaces.",
+    "developerName": "KeplerBrowser",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write"],
+    "websiteURL": "https://keplerbrowser.com",
+    "privacyPolicyURL": "https://www.keplerbrowser.com/legal/privacy",
+    "termsOfServiceURL": "hhttps://www.keplerbrowser.com/legal/tos",
+    "defaultPrompt": [
+      "Find what I already saved about a topic in Kepler.",
+      "Save this URL to one of my Kepler spaces.",
+      "Look for related saved links before we research more."
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "WebSearch|WebFetch",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "A web search or fetch just completed. If the result contains a useful URL or resource, offer to save it to the user's space using the mcp__kepler__add_link tool. Only suggest this if the content seems worth saving — don't prompt for every search."
+          }
+        ]
+      }
+    ]
+  }
+}

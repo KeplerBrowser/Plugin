@@ -1,5 +1,5 @@
 {
-  "name": "kepler",
+  "name": "kepler-plugin",
   "owner": {
     "name": "KeplerBrowser",
     "email": "support@keplerbrowser.com"
@@ -10,6 +10,7 @@
   "plugins": [
     {
       "name": "kepler",
+      "description": "Kepler plugin for agents - save links, and recall browser memory with your AI assistant.",
       "source": "./"
     }
   ]

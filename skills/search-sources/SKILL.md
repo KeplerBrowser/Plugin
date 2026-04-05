@@ -7,7 +7,7 @@ Kepler is a personal memory store for URLs. This skill is for contextual enrichm
 
 Derive the search query from the URLs or topic already present in the conversation — do not ask the user for a query.
 
-Use `mcp__kepler__search_links`.
+Use the `search_links` tool from the Kepler MCP server.
 
 If the user specifies a space, search within that scope when the tool supports it.
 

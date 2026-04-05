@@ -5,7 +5,7 @@ description: Use when the user explicitly wants to remember, find, or look up so
 
 Interpret `$ARGUMENTS` as what the user wants to recall. If empty, ask the user what they're looking for before searching.
 
-Use `mcp__kepler__search_links`.
+Use the `search_links` tool from the Kepler MCP server.
 
 If the user mentions a space, search within that scope when the tool supports it.
 
