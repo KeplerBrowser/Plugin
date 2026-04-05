@@ -1,8 +1,11 @@
 {
   "mcpServers": {
     "kepler": {
-      "type": "http",
-      "url": "https://app.keplerbrowser.com/mcp"
+      "command": "uv",
+      "args": [
+        "run",
+        "https://raw.githubusercontent.com/KeplerBrowser/Plugin/refs/heads/openclaw/mcp-proxy-server.py"
+      ]
     }
   }
 }
